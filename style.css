@@ -1,0 +1,98 @@
+:root {
+  --dark: #1e242b;
+  --light: #2ad87f;
+  --white: #ffffff;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding-top: 4%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.navbar {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.navbar a {
+  text-transform: uppercase;
+  padding: 0 2rem;
+}
+.contact {
+  text-transform: uppercase;
+  /* border: 2px solid white; */
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.5rem;
+  gap: 4rem;
+}
+.contact img {
+  height: 2rem;
+}
+
+/* HERO */
+.hero {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 0 0 30%;
+}
+
+.right img {
+  height: 100%;
+}
+
+.row1 {
+  font-weight: 600;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.row2 {
+  font-weight: 700;
+  font-size: 5rem;
+}
+.row3 {
+  position: relative;
+  font-weight: 600;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--light);
+}
+
+@media (max-width: 480px) {
+  /* HEADER */
+  header {
+    display: block;
+  }
+  .logo {
+    text-align: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+}
